@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&family=Rubik+Wet+Paint&display=swap");
+* {
+  font-family: "Rubik Wet Paint", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background-image: url(./public/yasser.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.logo {
+  height: 36px;
+  width: 40px;
+}
+.nav {
+  padding-left: 57px;
+  padding-right: 57px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}
+.navhomme {
+  margin-top: -120px;
+}
+#listes {
+  padding-top: 17px;
+  color: #fec629;
+  display: flex;
+}
+#listes li {
+  margin-right: 19px;
+}
+.menubare {
+  cursor: pointer;
+  color: #f8f8f8;
+  font-size: 48px;
+  float: right;
+  margin-right: -55px;
+  display: none;
+}
+@media (max-width: 966px) {
+  .nav {
+    display: block;
+    background-color: #272317 !important;
+
+  }
+  #listes {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #listes li {
+    padding-bottom: 9px;
+    color: white;
+  }
+  .logo {
+    margin-left: -54px;
+  }
+  .menubare {
+    display: block;
+  }
+}
+.main {
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.developer {
+  font-size: 62px;
+  color: #fec629;
+}
+.ext {
+  color: #a59465;
+  font-size: 42;
+}
+.fulio {
+  height: 500px;
+  width: 492px;
+}
+@media (max-width: 966px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .fulio {
+    height: 282px;
+    width: 290px;
+  }
+}
+.btn-contact {
+  color: #f8f8f8;
+  background-color: #fec629;
+  height: 49px;
+  width: 152px;
+  border: #fec629;
+  border-radius: 50px;
+}
+.titre {
+  color: #f8f8f8;
+  padding-left: 69px;
+  margin-bottom: 49px;
+}
+.paragraphe2 {
+}
+.para2 {
+  color: #f8f8f8;
+}
+.About {
+  margin-top: 192px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Aboutimg {
+  height: 395px;
+  width: 395px;
+}
+@media (max-width: 966px) {
+  .parAbout {
+    margin-top: 112px;
+  }
+  .About {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .paragraphe2 {
+    text-align: center;
+  }
+  .titre {
+    padding-left: 0px;
+  }
+}
+.Aboute2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+.parAbout {
+  color: #fec629;
+}
+.titreAbout {
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 45px;
+}
+.para2About {
+  font-size: 18px;
+  font-weight: lighter;
+  color: #f8f8f8;
+}
+.skillscontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 508px) {
+  .skillscontainer {
+    margin-top: 239px;
+  }
+}
+@media (min-width: 0px) and (max-width: 507px) {
+  .skillscontainer {
+    margin-top: 90px;
+  }
+}
+
+.Skillset {
+  color: #f8f8f8;
+}
+@media (max-width: 966px) {
+  .Aboute2 {
+    display: flex;
+    flex-direction: column;
+    height: 130vh;
+  }
+  .parAbout {
+    text-align: center;
+  }
+  .imgabout {
+    height: 213px;
+    width: 213px;
+  }
+}
+.tech-icons {
+  border: 1px solid #cab371;
+  width: 210px;
+  height: 140px;
+  font-size: 72px;
+  color: #f8f8f8;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 62px;
+  padding-right: 62px;
+  margin-top: 33px;
+  transition: 1.5s;
+}
+.tech-icons:hover {
+  background-color: #cab371;
+  border: #cab371;
+}
+.tools {
+  color: #f8f8f8;
+  margin-top: 29px;
+  margin-bottom: -8px;
+}
+.link {
+  font-family: "Rubik Wet Paint", serif;
+  list-style: none;
+  text-decoration: none;
+  color: #fec629;
+}
+.contacte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 145vh;
+}
+.paragraphecontacte {
+  margin-top: 83px;
+  text-align: center;
+}
+.contactP {
+  color: #fec629;
+}
+.contactH {
+  color: #f8f8f8;
+}
+.contactT {
+  color: #a59465;
+}
+.Form {
+  margin-top: 8px;
+  padding-top: 19px;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lableinput {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+.lable {
+  color: #fec629;
+  width: 80%;
+}
+.input {
+  height: 6vh;
+  border-radius: 8px;
+  border: none;
+  width: 87vh;
+}
+.inputMessage {
+  width: 87vh;
+  border-radius: 8px;
+  height: 130px;
+}
+.button {
+  margin-top: 22px;
+  width: 87vh;
+  height: 6vh;
+  background-color: #fec629;
+  border-radius: 50px;
+  border: none;
+  color: #f8f8f8;
+}
+.contentfrmular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(245, 222, 179, 0.13);
+  border-radius: 11px;
+  padding-bottom: 36px;
+  width: 60%;
+}
+.sendmessage {
+  color: #f8f8f8;
+  font-size: 78px;
+  width: 90px;
+}
+@media (max-width: 766px) {
+  .contacte {
+    margin-top: -123px;
+    height: 166vh;
+  }
+  .contentfrmular {
+    width: 100%;
+  }
+  .input,
+  .inputMessage {
+    width: 320px;
+  }
+  .button {
+    width: 320px;
+  }
+}
+@media (min-width: 766px) and (max-width: 1199px) {
+  .contacte {
+    height: 146vh;
+  }
+  .contentfrmular {
+    width: 890px;
+  }
+  .input,
+  .inputMessage {
+    width: 406px;
+  }
+  .button {
+    width: 406px;
+  }
+}
+.Footer {
+  background-color: #272317ae;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  width: 100%;
+}
+.Footer1 {
+  padding-top: 15px;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Footer2 {
+  padding-top: 15px;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Footer3 {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.iconsfooter {
+  font-size: 25px;
+}
+@media (max-width: 1199px) {
+  .Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.Projects{
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.projectstitle{
+  color: #fec629;
+  font-size: 46px;
+  text-align: center;
+
+}
+.paraprojects{
+  font-size: large  ;
+  font-weight: 100;
+  color: #f8f8f8;
+}
