@@ -4,6 +4,7 @@ const bodyparser = require("body-parser");
 const nodemailer = require("nodemailer");
 require("dotenv").config();
 
+
 const app = express();
 app.use(express.json());
 app.use(
@@ -39,6 +40,14 @@ app.post("/contact", async (req, res) => {
   } catch (error) {
     res.status(500).send("حدث خطأ أثناء إرسال الرسالة");
   }
+});
+const path = require('path');
+
+// تقديم ملفات React
+app.use(express.static(path.join(__dirname, 'dist')));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
 app.listen(port, () => {
