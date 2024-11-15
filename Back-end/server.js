@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const bodyparser = require('body-parser');
 const nodemailer = require('nodemailer');
+ 
 const app = express();
 app.use(express.json());
 app.use(cors());
@@ -33,7 +34,9 @@ app.post("/contact", async (req, res) => {
         res.status(500).send('حدث خطأ أثناء إرسال الرسالة');
       }
 });
-
+  app.get("*",(req,res)=>{
+    res.sendFile(`${__dirname}/index.html`)
+  })
 app.listen(port, () => {
     console.log("Server is running on port", port);
 });
