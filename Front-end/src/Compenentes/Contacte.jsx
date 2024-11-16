@@ -6,6 +6,7 @@ import axios from "axios";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
 export const Contacte = () => {
+  const [loading,setloading]=useState(false)
   const notify = (message, type) => {
     if (type == "error") {
       toast.error(message);
@@ -22,20 +23,22 @@ export const Contacte = () => {
     setfromdata({ ...fromdata, [e.target.name]: e.target.value });
   };
   const sendmessage = async (e) => {
-    e.preventDefault();
+    e.preventDefault()
+    setloading(true)
     try {
       const response = await axios.post(
-        "http://localhost:5000/contact",
+        "https://backend-fulio.onrender.com/contact",
         fromdata
       );
-      console.log(response.data);
       notify("Sent successfully", "success");
       setfromdata({
         name: "",
         email: "",
         message: "",
       });
+      setloading(false)
     } catch (error) {
+      setloading(false)
       console.log("حدث خطأ:", error);
       notify("Error in the transmitter", "error");
     }
@@ -94,8 +97,12 @@ export const Contacte = () => {
               value={fromdata.message}
             />
           </div>
-          <button type="submit" className="button">
-            Send Message
+          <button type="submit" className="button" disabled={loading}>
+            {loading ? (
+              <span className="spinner-border spinner-border-sm"></span> // Loading spinner
+            ) : (
+              "Send Message"
+            )}
           </button>
         </Container>
       </form>
