@@ -54,6 +54,7 @@ body {
   .nav {
     display: block;
     background-color: #272317 !important;
+    width: 100%;
   }
   #listes {
     display: none;
@@ -130,6 +131,7 @@ body {
 .Aboutimg {
   height: 395px;
   width: 395px;
+  
 }
 @media (max-height: 601px) {
   .imgabout {
@@ -145,6 +147,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .Aboutimg {
+    height: 195px;
+    width: 195px;
+   ;
   }
   .paragraphe2 {
     text-align: center;
