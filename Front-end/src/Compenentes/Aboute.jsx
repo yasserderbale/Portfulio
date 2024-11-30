@@ -46,7 +46,7 @@ export const Aboute = () => {
             <button className="btn-contact">Download Cv</button>
           </a>
         </div>
-        <img className="Aboutimg" src={about} alt="About" />
+        <img className="  " src={about} alt="About" />
       </Container>
     </div>
   );
