@@ -98,12 +98,13 @@ export const Contacte = () => {
             />
           </div>
           <button type="submit" className="button" disabled={loading}>
-            {loading ? (
-              <span className="spinner-border spinner-border-sm"></span> // Loading spinner
-            ) : (
-              "Send Message"
-            )}
-          </button>
+  {loading ? (
+    <span className="spinner-border spinner-border-sm"></span>  
+  ) : (
+    "Send Message"
+  )}
+</button>
+
         </Container>
       </form>
       <ToastContainer />
