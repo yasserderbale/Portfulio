@@ -44,9 +44,9 @@ export const Contacte = () => {
     }
   };
   return (
-    <div className="contacte">
+    <div className="contacte" >
       <Navbarepricipale />
-      <div className="paragraphecontacte">
+      <div className="paragraphecontacte" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
         <p className="contactP">Contact</p>
         <h1 className="contactH">
           I’m available for every
@@ -57,7 +57,7 @@ export const Contacte = () => {
           <br /> just want to say hi? I’d love to hear from you!
         </p>
       </div>
-      <form onSubmit={sendmessage} className="container Form">
+      <form onSubmit={sendmessage} className="container Form" data-aos="zoom-in">
         <Container className=" contentfrmular mt-3">
           <RiMailSendFill className="sendmessage" />
           <div className="lableinput">

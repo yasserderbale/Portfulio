@@ -17,16 +17,16 @@ export const Skills = () => {
   return (
     <div>
       <Navbarepricipale />
-      <Container className="skillscontainer">
-        <Row className="text-center  justify-content-center">
+      <Container className="skillscontainer" >
+        <Row className="text-center  justify-content-center" >
           <Row>
             <Col>
-              <h1 className="Skillset">
+              <h1 className="Skillset" data-aos="zoom-in" data-aos-duration="9000" data-aos-delay="90">
                 Professional<span style={{ color: "#fec629" }}> Skillest</span>
               </h1>
             </Col>
           </Row>
-          <Row>
+          <Row data-aos="zoom-in" data-aos-duration="9000" data-aos-delay="500">
             <Col>
               <CgCPlusPlus className="tech-icons" />
             </Col>
@@ -43,7 +43,7 @@ export const Skills = () => {
               <DiGit className="tech-icons" />
             </Col>
           </Row>
-          <Row>
+          <Row data-aos="zoom-in" data-aos-duration="9000" data-aos-delay="500">
             <Col>
               <DiJava className="tech-icons" />
             </Col>
@@ -60,7 +60,7 @@ export const Skills = () => {
               <FaHtml5 className="tech-icons" />
             </Col>
           </Row>
-          <Row className="justify-content-center">
+          <Row className="justify-content-center" data-aos="zoom-in" data-aos-duration="9000" data-aos-delay="500">
             <Col>
               <FaBootstrap className="tech-icons" />
             </Col>
@@ -68,12 +68,12 @@ export const Skills = () => {
               <FaGithub className="tech-icons" />
             </Col>
           </Row>
-          <Row>
+          <Row data-aos="zoom-in" data-aos-duration="9000" data-aos-delay="500">
             <h1 className="tools">
               <span style={{ color: "#fec629" }}>Tools</span> I use
             </h1>
           </Row>
-          <Row className="justify-content-center">
+          <Row className="justify-content-center" data-aos="zoom-in" data-aos-duration="9000" data-aos-delay="500">
             <Col>
               <VscVscode className="tech-icons" />
             </Col>

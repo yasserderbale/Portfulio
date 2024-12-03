@@ -4,8 +4,8 @@ import about from "../public/about.svg";
 export const Aboute = () => {
   return (
     <div>
-      <Container className="About">
-        <div className="paragraphe2">
+      <Container className="About" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+        <div className="paragraphe2" >
           <h1 className="titre">
             LET ME <span style={{ color: "#fec629" }}>INTRODUCE</span> MYSELF
           </h1>

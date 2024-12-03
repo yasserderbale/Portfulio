@@ -4,7 +4,7 @@ import { Aboute } from "./Aboute";
 import { Navbarepricipale } from "./Navbarepricipale";
 export const Navbare = () => {
   return (
-    <div>
+    <div >
       <Navbarepricipale />
       <Main />
       <Aboute />

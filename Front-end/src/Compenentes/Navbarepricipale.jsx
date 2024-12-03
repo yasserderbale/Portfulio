@@ -17,16 +17,16 @@ export const Navbarepricipale = () => {
       if (window.innerWidth > 966) {
         setNavBackground(window.scrollY > 50); // غيّر القيمة حسب الحاجة
       }
-      
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  },);
+  });
   return (
     <div
+    
       className="nav"
       style={{
-        backgroundColor: navBackground  ? "#2d25106e" : "transparent", // حدد اللون هنا
+        backgroundColor: navBackground ? "#2d25106e" : "transparent", // حدد اللون هنا
         transition: "background-color 0.3s ease",
       }}
     >

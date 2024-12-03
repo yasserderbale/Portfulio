@@ -5,8 +5,8 @@ export const Aboute2 = () => {
   return (
     <div>
       <Navbarepricipale />
-      <div className="Aboute2">
-        <div className=" parAbout">
+      <div className="Aboute2" >
+        <div className=" parAbout" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500">
           <h1 className="titreAbout">Know Who I'M</h1>
           <p className="para2About">
             Hi Everyone, I am{" "}
@@ -26,7 +26,7 @@ export const Aboute2 = () => {
             <br /> Travelling
           </p>
         </div>
-        <img className="imgabout" src={imgAbout} />
+        <img className="imgabout" src={imgAbout} data-aos="zoom-in"/>
       </div>
     </div>
   );

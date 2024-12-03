@@ -29,6 +29,7 @@ body {
   position: fixed;
   width: 100%;
   top: 0px;
+  z-index: 1;
 }
 .navhomme {
   margin-top: -120px;
@@ -430,4 +431,5 @@ body {
     transform: rotate(360deg);
   }
 }
+
 

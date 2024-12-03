@@ -7,11 +7,18 @@ import { Skills } from "./Compenentes/Skills";
 import { Contacte } from "./Compenentes/Contacte";
 import { Footer } from "./Compenentes/Footer";
 import { Projects } from "./Compenentes/Projects";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 }); // إعداد مدة الحركة
+  }, []);
+
   return (
-    <div>
+    <div >
       <BrowserRouter>
-        <Routes>
+        <Routes >
           <Route path="/" element={<Navbare />} />
           <Route path="/Aboute" element={<Aboute2 />} />
           <Route path="/Skills" element={<Skills />} />

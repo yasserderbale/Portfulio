@@ -3,7 +3,7 @@ import { FaFacebookSquare, FaGithub } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 export const Footer = () => {
   return (
-    <div className="Footer">
+    <div className="Footer" >
       <div className="Footer1">
         <p>Designed And Developed By Yasser Derbal</p>
       </div>
