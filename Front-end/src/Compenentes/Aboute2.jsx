@@ -13,9 +13,8 @@ export const Aboute2 = () => {
             <span style={{ color: "#fec629" }}>Yasser Derbal</span> from
             <span style={{ color: "#fec629" }}> Algeria, Alger. </span>
             <br /> I am currently a student of computer science.
-            <br /> I have completed my schooling from Barpeta Road and now
-            staying in
-            <br /> Guwahati for Degree.
+            <br /> I have completed my schooling from Algeria  
+           
             <br />
             <br />
             Apart from coding, some other activities that I love to do!

@@ -40,8 +40,22 @@ body {
   color: #fec629;
   display: flex;
 }
+.content {
+  content: "";
+  height: 5px;
+  width: 0%;
+  background-color: #fec629;
+  border-radius: 3px;
+  transition: .4s;
+}
+li:hover .content{
+  width: 100%;
+}
+
 #listes li {
   margin-right: 19px;
+  display: inline-block;
+  
 }
 .menubare {
   cursor: pointer;
@@ -56,12 +70,15 @@ body {
     display: block;
     background-color: #272317 !important;
     width: 100%;
+    background-color: red;
   }
   #listes {
     display: none;
     flex-direction: column;
+    width: 100%;
+    text-align: center;
     justify-content: center;
-    align-items: center;
+    
   }
   #listes li {
     padding-bottom: 9px;
@@ -99,6 +116,7 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    
   }
   .fulio {
     height: 282px;
@@ -110,16 +128,23 @@ body {
   background-color: #fec629;
   height: 49px;
   width: 152px;
-  border: #fec629;
+  border: 2px solid #fec629;
   border-radius: 50px;
+  font-weight: bolder;
+
+  transition: 0.2s !important;
+}
+.btn-contact:hover {
+  border: 2px solid #fec629;
+  transform: translateY(-1px);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
 }
 .titre {
   color: #f8f8f8;
   padding-left: 69px;
   margin-bottom: 49px;
 }
-.paragraphe2 {
-}
+
 .para2 {
   color: #f8f8f8;
 }
@@ -128,11 +153,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 .Aboutimg {
   height: 395px;
   width: 395px;
-  
 }
 @media (max-height: 601px) {
   .imgabout {
@@ -145,6 +170,7 @@ body {
     margin-top: 112px;
   }
   .About {
+    margin-top: -30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -152,7 +178,6 @@ body {
   .Aboutimg {
     height: 195px;
     width: 195px;
-   ;
   }
   .paragraphe2 {
     text-align: center;
@@ -243,6 +268,7 @@ body {
   text-decoration: none;
   color: #fec629;
 }
+
 .contacte {
   display: flex;
   flex-direction: column;
@@ -431,5 +457,3 @@ body {
     transform: rotate(360deg);
   }
 }
-
-

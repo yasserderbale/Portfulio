@@ -4,7 +4,7 @@ import about from "../public/about.svg";
 export const Aboute = () => {
   return (
     <div>
-      <Container className="About" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+      <Container className="About" data-aos="zoom-in" data-aos-duration="9000" data-aos-delay="300">
         <div className="paragraphe2" >
           <h1 className="titre">
             LET ME <span style={{ color: "#fec629" }}>INTRODUCE</span> MYSELF
@@ -46,7 +46,7 @@ export const Aboute = () => {
             <button className="btn-contact">Download Cv</button>
           </a>
         </div>
-        <img className="Aboutimg" src={about} alt="About" />
+        <img className="Aboutimg" data-aos="flip-left" data-aos-duration="9000" data-aos-delay="900" src={about} alt="About" />
       </Container>
     </div>
   );

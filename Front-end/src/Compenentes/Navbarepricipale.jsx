@@ -20,10 +20,9 @@ export const Navbarepricipale = () => {
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  });
+  },navBackground);
   return (
     <div
-    
       className="nav"
       style={{
         backgroundColor: navBackground ? "#2d25106e" : "transparent", // حدد اللون هنا
@@ -41,19 +40,34 @@ export const Navbarepricipale = () => {
       </MdOutlineMenu>
       <ul id="listes">
         <Link className="link" to="/">
-          <li>Homme</li>
+          <li>Homme
+          <div className="content"></div>
+            </li>  
+          
         </Link>
         <Link className="link" to="/Aboute">
-          <li>About</li>
+          <li>About
+          <div className="content"></div>
+          </li>
+          
         </Link>
         <Link className="link" to="/Skills">
-          <li>Skills</li>
+          <li>Skills
+          <div className="content"></div>
+          </li>
+          
         </Link>
         <Link className="link" to="/contact">
-          <li>Contact</li>
+          <li>Contact
+          <div className="content"></div>
+          </li>
+          
         </Link>
         <Link className="link" to="/Projects">
-          <li>Projects</li>
+          <li>Projects
+          <div className="content"></div>
+          </li>
+          
         </Link>
       </ul>
     </div>
