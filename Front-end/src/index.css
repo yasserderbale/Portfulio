@@ -193,7 +193,8 @@ li:hover .content {
   align-items: center;
   justify-content: center;
   justify-content: space-around;
-  height: 100vh;
+  padding-top: 94px;
+  margin-bottom: 149px;
 }
 .parAbout {
   color: #fec629;
@@ -295,7 +296,7 @@ li:hover .content {
   margin-top: 8px;
   padding-top: 19px;
   width: 100%;
-  height: 60vh;
+
   display: flex;
   flex-direction: column;
   align-items: center;
