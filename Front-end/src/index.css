@@ -233,7 +233,7 @@ li:hover .content {
   .Aboute2 {
     display: flex;
     flex-direction: column;
-    height: 130vh;
+    
   }
   .parAbout {
     text-align: center;
@@ -356,7 +356,7 @@ li:hover .content {
 @media (max-width: 766px) {
   .contacte {
     margin-top: -10px;
-    height: 166vh;
+    background-color: #007bff;
   }
   .contentfrmular {
     width: 100%;
@@ -371,7 +371,7 @@ li:hover .content {
 }
 @media (min-width: 766px) and (max-width: 1299px) {
   .contacte {
-    height: 146vh;
+    
   }
   .contentfrmular {
     width: 890px;
