@@ -233,6 +233,8 @@ li:hover .content {
   .Aboute2 {
     display: flex;
     flex-direction: column;
+    margin-bottom: 149px;
+
     
   }
   .parAbout {
