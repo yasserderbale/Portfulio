@@ -1,15 +1,18 @@
 import React from "react";
+import one from "../public/gestion de recour.jpg"
+import two from "../public/hotell.jpg"
+import three from "../public/380512810-ca97d344-3834-4875-bb4c-c994ae08cdc6.png"
 import { Navbarepricipale } from "./Navbarepricipale";
 export const Projects = () => {
   return (
-    <div>
+    <div >
       <Navbarepricipale />
-      <h1 className="titreprojects">My Projects</h1>
-      <div className="Projects ">
+      <h1 data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200" className="titreprojects">My Projects</h1>
+      <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="900" className="Projects ">
         <div className="carde">
           <img
             className="gestionrecoure"
-            src="/src/public/gestion de recour.jpg"
+            src={one}
           />
           <p className="colorp">
             This website handles objections to points in students’ models. The
@@ -21,7 +24,7 @@ export const Projects = () => {
           </a>
         </div>
         <div className="carde">
-          <img className="gestionrecoure" src="/src/public/hotell.jpg" />
+          <img className="gestionrecoure" src={two} />
           <p className="colorp">
             This website checks the hotel reservations of the customers who book
             through this website where they choose the time, room and time
@@ -34,7 +37,7 @@ export const Projects = () => {
         <div className="carde">
           <img
             className="gestionrecoure"
-            src="/src/public/380512810-ca97d344-3834-4875-bb4c-c994ae08cdc6.png"
+            src={three}
           />
           <p className="colorp">
             This website uses an internet-connected API and is built with REdux,
