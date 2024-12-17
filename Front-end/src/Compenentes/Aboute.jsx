@@ -42,7 +42,7 @@ export const Aboute = () => {
             like<span style={{ color: "#fec629" }}> React.js</span> and
             <span style={{ color: "#fec629" }}> Next.js</span>
           </p>
-          <a href="/cv" target="_blank" rel="noopener noreferrer">
+          <a  href="/cv" target="_blank" rel="noopener noreferrer">
             <button className="btn-contact">Download Cv</button>
           </a>
         </div>

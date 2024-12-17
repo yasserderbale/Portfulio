@@ -46,16 +46,15 @@ body {
   width: 0%;
   background-color: #fec629;
   border-radius: 3px;
-  transition: .4s;
+  transition: 0.4s;
 }
-li:hover .content{
+li:hover .content {
   width: 100%;
 }
 
 #listes li {
   margin-right: 19px;
   display: inline-block;
-  
 }
 .menubare {
   cursor: pointer;
@@ -65,11 +64,10 @@ li:hover .content{
   margin-right: -29px;
   display: none;
   border-radius: 11px;
-  transition: .4s;
+  transition: 0.4s;
 }
-.menubare:hover{
+.menubare:hover {
   background-color: #ad90486e;
-
 }
 @media (max-width: 966px) {
   .nav {
@@ -86,8 +84,6 @@ li:hover .content{
     width: 100%;
     text-align: center;
     justify-content: center;
-    
-    
   }
   #listes li {
     padding-bottom: 9px;
@@ -125,7 +121,6 @@ li:hover .content{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    
   }
   .fulio {
     height: 282px;
@@ -140,7 +135,6 @@ li:hover .content{
   border: 2px solid #fec629;
   border-radius: 50px;
   font-weight: bolder;
-
   transition: 0.2s !important;
 }
 .btn-contact:hover {
@@ -162,7 +156,6 @@ li:hover .content{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 .Aboutimg {
   height: 395px;
@@ -432,23 +425,66 @@ li:hover .content{
     margin-top: -19px;
   }
 }
-.Projects {
-  height: 93vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.projectstitle {
+.titreprojects {
+  position: relative;
+  top: 113px;
+  text-align: center;
   color: #fec629;
-  font-size: 46px;
+  font-weight: bolder;
+  font-size: 33px;
+  letter-spacing: 3px;
+}
+.Projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 33px;
+}
+.carde {
+  margin-top: 179px;
+  margin-bottom: 176px;
+  height: 494px;
+  width: 432px;
+  background-color: rgba(245, 222, 179, 0.13);
+  border-radius: 6px;
+  box-shadow: 3px 3px 3px rgba(245, 222, 179, 0.13);
+  transition: 0.4s;
+}
+.carde:hover {
+  transform: translateY(-8px);
+  border: 1px solid #cab371;
+}
+.gestionrecoure {
+  padding-top: 2px;
+  padding-left: 2px;
+  height: 45%;
+  width: 100%;
+}
+.colorp {
+  margin-top: 22px;
+  color: #ccc;
   text-align: center;
 }
-.paraprojects {
-  font-size: large;
-  font-weight: 100;
-  color: #f8f8f8;
+.btnproject {
+  background-color: #fec629;
+  padding: 8px;
+  margin-top: 4px;
+  margin-left: 15px;
+  border: none;
+  border-radius: 5px;
+  list-style: none;
+  text-decoration: none;
+  color: #272317;
+  cursor: pointer;
+  transition: 0.3s !important;
 }
+.btnproject:hover {
+  transform: translateY(-4px);
+  box-shadow: 1px 1px 1px #666258;
+  border: 1px solid #faf8f3;
+}
+
 .spinner-border {
   border: 2px solid #ccc;
   border-bottom: 3px solid #007bff;
