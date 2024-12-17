@@ -8,8 +8,8 @@ export const Projects = () => {
     <div >
       <Navbarepricipale />
       <h1 data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200" className="titreprojects">My Projects</h1>
-      <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="900" className="Projects ">
-        <div className="carde">
+      <div data-aos="flip-right" data-aos-duration="1000" data-aos-delay="900" className="Projects ">
+        <div className="carde" >
           <img
             className="gestionrecoure"
             src={one}
