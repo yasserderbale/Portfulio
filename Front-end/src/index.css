@@ -16,6 +16,10 @@ body {
   background-position: center;
   height: 100vh;
 }
+#Particles{
+  background-color: red;
+}
+
 .logo {
   height: 36px;
   width: 40px;
@@ -36,7 +40,6 @@ body {
 }
 #listes {
   padding-top: 17px;
-  padding-right: 22px;
   color: #fec629;
   display: flex;
 }
@@ -53,7 +56,7 @@ li:hover .content {
 }
 
 #listes li {
-  margin-right: 19px;
+  margin-right: 49px;
   display: inline-block;
 }
 .menubare {
@@ -75,15 +78,15 @@ li:hover .content {
     padding-bottom: 6px;
     display: block;
     background-color: #272317 !important;
-    width: 100%;
-    background-color: red;
+    
   }
   #listes {
     display: none;
     flex-direction: column;
-    width: 100%;
     text-align: center;
     justify-content: center;
+    align-items: center;
+    padding-left: 62px;
   }
   #listes li {
     padding-bottom: 9px;
@@ -98,13 +101,18 @@ li:hover .content {
   }
 }
 .main {
+ 
   margin-top: 200px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+.paragraphe{
+  
 }
 
 .developer {
-  font-size: 62px;
+  font-size: 46px;
   color: #fec629;
 }
 .ext {
@@ -128,6 +136,7 @@ li:hover .content {
   }
 }
 .btn-contact {
+  margin-top: 24px;
   color: #f8f8f8;
   background-color: #fec629;
   height: 49px;
@@ -194,7 +203,6 @@ li:hover .content {
   justify-content: center;
   justify-content: space-around;
   height: 93vh;
-
 }
 .parAbout {
   color: #fec629;
@@ -234,15 +242,13 @@ li:hover .content {
     display: flex;
     flex-direction: column;
     margin-bottom: 149px;
-
-    
   }
   .parAbout {
     text-align: center;
   }
   .imgabout {
-    height: 213px;
-    width: 213px;
+    height: auto;
+    width: 144px;
   }
 }
 .tech-icons {
@@ -358,7 +364,6 @@ li:hover .content {
 @media (max-width: 766px) {
   .contacte {
     margin-top: -10px;
-   
   }
   .contentfrmular {
     width: 100%;
@@ -373,7 +378,6 @@ li:hover .content {
 }
 @media (min-width: 766px) and (max-width: 1299px) {
   .contacte {
-    
   }
   .contentfrmular {
     width: 890px;
@@ -387,7 +391,8 @@ li:hover .content {
   }
 }
 .Footer {
-  background-color: #27231762;
+  margin-top: 43px;
+  background-color: #27231786;
   display: flex;
   justify-content: space-around;
   color: white;
@@ -407,14 +412,15 @@ li:hover .content {
   align-items: center;
 }
 .Footer3 {
+  
   width: 33%;
   display: flex;
   justify-content: center;
-  justify-content: space-around;
+  gap: 33px;
   align-items: center;
 }
 .iconsfooter {
-  font-size: 25px;
+  font-size: 19px;
 }
 @media (max-width: 1199px) {
   .Footer {

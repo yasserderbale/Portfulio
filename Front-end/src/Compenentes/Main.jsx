@@ -9,9 +9,9 @@ export const Main = () => {
   // إعداد Typed.js
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Developer", "And", "Problem Solver"],
-      typeSpeed: 170,
-      backSpeed: 50,
+      strings: ["Full-stack-Developer", "And", "Problem Solver"],
+      typeSpeed: 160,
+      backSpeed: 48,
       loop: true,
     });
     return () => {
@@ -22,27 +22,38 @@ export const Main = () => {
 
   return (
     <div>
-      <Container className="main" data-aos="zoom-in" data-aos-duration="9000" data-aos-delay="300">
-        <div className="paragraphe" >
-          <h1 className="developer" data-aos="flip-left" data-aos-duration="9000" data-aos-delay="300" > 
-            Hi There,👋
+      <Container
+        className="main"
+        data-aos="zoom-in"
+        data-aos-duration="9000"
+        data-aos-delay="300"
+      >
+        <div className="paragraphe">
+          <h1
+            className="developer"
+            data-aos="flip-left"
+            data-aos-duration="9000"
+            data-aos-delay="300"
+          >
+            Hi There
             <br />
-            I am Full-Stack <br />
-            <span style={{ color: "#f8f8f8" ,fontSize:"54px"}} ref={el} />
+            I`M <span style={{ color: "#f8f8f8" }}>Yasser Derbal</span> <br />
+            <br />
+            <span style={{ color: "#f8f8f8", fontSize: "46px" }} ref={el} />
           </h1>
-          <p className="ext" data-aos="flip-left"data-aos-duration="9000" data-aos-delay="300"  >
-            I'm Yasser Derbal, a junior full-stack developer focused on building
-            interactive web solutions. With a background in HTML, CSS, and
-            JavaScript, I'm now exploring React, Node.js, and MongoDB to create
-            full-stack applications.
-          </p>
+
           <Link to="/contact">
-            <button className="btn-contact" data-aos="flip-left"   >
+            <button className="btn-contact" data-aos="flip-left">
               Contact Me
             </button>
           </Link>
         </div>
-        <img className="fulio" src={fulio} data-aos="fade-right" data-aos-delay="1000"/>
+        <img
+          className="fulio"
+          src={fulio}
+          data-aos="fade-right"
+          data-aos-delay="1000"
+        />
       </Container>
     </div>
   );

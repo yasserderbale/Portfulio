@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Navbare } from "./Compenentes/Navbare";
 import { Cv } from "./Compenentes/Cv";
@@ -9,16 +9,16 @@ import { Footer } from "./Compenentes/Footer";
 import { Projects } from "./Compenentes/Projects";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 function App() {
   useEffect(() => {
-    AOS.init({ duration: 1000 }); // إعداد مدة الحركة
+    AOS.init({ duration: 1000 });
   }, []);
 
   return (
-    <div >
+    <div>
+      
       <BrowserRouter>
-        <Routes >
+        <Routes>
           <Route path="/" element={<Navbare />} />
           <Route path="/Aboute" element={<Aboute2 />} />
           <Route path="/Skills" element={<Skills />} />
@@ -27,6 +27,8 @@ function App() {
           <Route path="/Projects" element={<Projects />} />
         </Routes>
       </BrowserRouter>
+
+      {/* Footer */}
       <Footer />
     </div>
   );
